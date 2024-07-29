@@ -116,7 +116,7 @@
 .recipes {
   background-color: #0a2750;
   background-image: url(../images/background_recipes.svg);
-  background: no-repeat center cover;
+  background: no-repeat center;
   color: #fff;
   display: block;
   padding: 0 0 215px;

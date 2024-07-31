@@ -50,7 +50,7 @@
           alt="Illustration inside a coffee shop"
         />
         <div class="header__footer">
-          <span class="header__footer-block">
+          <div class="header__footer-block">
             <p class="header__paragraph">Hours</p>
             <p class="header__paragraph">
               Monday &ndash; Friday (10:00 &ndash; 19:00)
@@ -58,41 +58,47 @@
             <p class="header__paragraph">
               Saturday &ndash; Sunday (11:00 &ndash; 18:00)
             </p>
-          </span>
-          <span class="header__footer-block">
-            <p class="header__paragraph">
-              Success Avenue, The Town of Triple Peaks
-            </p>
-          </span>
+          </div>
+          <p class="header__paragraph">
+            Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
       </header>
       <main class="content">
         <section class="recipes" id="recipes">
-          <span class="recipes__text">
-            <h2 class="recipes__title">Recipes</h2>
-            <p class="recipes__paragraph">
-              Check out some recipes we've collected for your home-brewing
-              convenience:
-            </p>
-          </span>
-          <span class="recipes__videos">
-            <span class="recipes__video-frame">
-              <iframe src="https://www.youtube.com/embed/6yItCQB4V9A?si=CSm4C7XVS1XS7mv2" title="Coffee Basics" class="recipes__videos_type_video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
-              <span class="recipes__videos-text">
-                <p class="recipes__videos_type_text">Coffee basics</p>
-                <p class="recipes__videos_type_text">~10 min</p>
-              </span>
-            </span>
-            <span class="recipes__video-frame">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <ul class="recipes__videos">
+            <li>
               <iframe
-              src="https://www.youtube.com/embed/vD4JtJtHJ5I?si=okb_zX20c6qpIoBi" title="Pour Over Coffee" class="recipes__videos_type_video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                src="https://www.youtube.com/embed/6yItCQB4V9A?si=CSm4C7XVS1XS7mv2"
+                title="Coffee Basics"
+                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
-            <span class="recipes__videos-text">
-              <p class="recipes__videos_type_text">Pour over coffee</p>
-              <p class="recipes__videos_type_text">~15 min</p>
-            </span>
-          </span>
+              <p class="recipes__video-caption">
+                <span>Coffee basics</span><span>~10 min</span>
+              </p>
+            </li>
+            <li>
+              <iframe
+                src="https://www.youtube.com/embed/vD4JtJtHJ5I?si=okb_zX20c6qpIoBi"
+                title="Pour Over Coffee"
+                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>Pour over coffee</span><span>~15 min</span>
+              </p>
+            </li>
+          </ul>
         </section>
         <section class="reservation" id="reservation">Reservation</section>
         <section class="menu" id="menu">Menu</section>

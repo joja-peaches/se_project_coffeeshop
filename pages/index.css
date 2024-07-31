@@ -108,6 +108,7 @@
   font-weight: 500;
   color: #838383;
   margin: 0;
+  position: relative;
 }
 
 .content {
@@ -115,63 +116,54 @@
 
 .recipes {
   background-color: #0a2750;
-  background-image: url(../images/background_recipes.svg);
-  background: no-repeat center;
-  color: #fff;
-  display: block;
-  padding: 0 0 215px;
-}
-
-.recipes__text {
-  display: flex;
-  flex-direction: column;
+  background-image: url(/images/background_recipes.svg);
+  padding: 100px 80px 215px;
 }
 
 .recipes__title {
-  margin: 100px 0 0 80px;
+  margin: 0 0 24px;
   max-width: 580px;
   font-family: "Inter";
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  color: #fff;
 }
 
-.recipes__paragraph {
-  margin: 24px 0 0 80px;
+.recipes__subtitle {
+  margin: 0 0 80px;
   max-width: 438px;
   font-family: "Noto Serif";
   font-size: 20px;
   line-height: 30px;
+  color: #fff;
 }
 
 .recipes__videos {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 80px auto 0;
-  column-gap: 40px;
+  gap: 40px;
+  list-style-type: none;
+  border: 0px;
+  margin: auto 0;
 }
 
-.recipe__video-frame {
-  display: block;
-}
-
-.recipes__videos-text {
-  display: flex;
-  justify-content: space-between;
-}
-
-.recipes__videos_type_video {
+.recipes__iframe {
+  border: 0px;
   width: 480px;
   height: 273px;
-  border: 0px;
 }
 
-.recipes__videos_type_text {
+.recipes__video-caption {
+  margin: 24px 0 0;
   font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .reservations {

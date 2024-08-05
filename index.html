@@ -100,7 +100,70 @@
             </li>
           </ul>
         </section>
-        <section class="reservation" id="reservation">Reservation</section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form">
+            <fieldset class="reservation__form__fieldset">
+              <label
+                for="reservation__form__name"
+                class="reservation__form__label"
+                >Name *</label
+              >
+              <input
+                type="text"
+                class="reservation__form__input"
+                id="reservation__form__name"
+                placeholder="Name Surname"
+                required
+              />
+              <label
+                for="reservation__form__guestcount"
+                class="reservation__form__label"
+                >Number of guests *</label
+              >
+              <input
+                type="number"
+                min="1"
+                max="8"
+                class="reservation__form__input"
+                id="reservation__form__guestcount"
+                placeholder="1-8"
+                required
+              />
+              <label
+                class="reservation__form__label"
+                for="reservation__form__date"
+                >Date & time *</label
+              >
+              <input
+                type="datetime-local"
+                class="reservation__form__input"
+                id="reservation__form__date"
+                required
+              />
+              <label
+                class="reservation__form__label"
+                for="reservation__form__email"
+                >Your email *</label
+              >
+              <input
+                type="email"
+                class="reservation__form__input"
+                id="reservation__form__email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <button class="reservation__form__button">Book a table</button>
+            <label class="reservation__form__label">
+              <input
+                type="checkbox"
+                class="reservation__form__checkbox"
+                required
+              />I agree with the terms of use</label
+            >
+          </form>
+        </section>
         <section class="menu" id="menu">Menu</section>
         <section class="about" id="about">About</section>
       </main>

@@ -173,9 +173,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .reservation__title {
@@ -184,74 +181,79 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 80px;
+  text-align: center;
 }
 
 .reservation__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
-.reservation__form_type_fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0;
-  margin: 0;
-  padding: 0;
+.form {
   max-width: 385px;
 }
 
-.reservation__form_type_label {
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__label {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 8px;
-  align-self: start;
+  margin-bottom: 32px;
+  display: block;
 }
 
-.reservation__form_type_label:nth-last-child(1) {
-  align-self: center;
+.form__label_type_checkbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
 }
 
-.reservation__form_type_input {
+.form__input {
   font-family: "Inter";
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  width: 385px;
+  width: 100%;
   height: 60px;
   border-radius: 4px;
   color: #838383;
-  margin: 0 0 32px;
+  margin-top: 8px;
   border: 1px solid #838383;
-  padding: 0 20px;
+  display: block;
   box-sizing: border-box;
+  padding: 0;
 }
 
-.reservation__form_type_button {
+.form__button {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
-  width: 385px;
+  width: 100%;
   height: 60px;
-  margin: 0 0 32px;
+  margin-bottom: 32px;
   border: 1px solid #838383;
   background-color: #2f80ed;
+  box-sizing: border-box;
   color: #fff;
+  padding: 0;
 }
 
-.reservation__form_type_button:hover {
+.form__button:hover {
   opacity: 70%;
   transition: ease-out 1s;
 }
 
-.reservation__form_type_checkbox {
+.form__checkbox {
   height: 20px;
   width: 20px;
+  border: 1px solid #838383;
   border-radius: 2px;
   background-color: #2f80ed;
   background-image: url(../images/check.svg);

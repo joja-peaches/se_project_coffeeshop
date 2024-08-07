@@ -1,7 +1,7 @@
 .menu {
   padding: 100px 0;
   background-color: #fff;
-  background-image: url(../images/background_menu.svg);
+  background-image: url(/images/background_menu.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,7 +11,7 @@
   max-width: 780px;
   margin: 0 auto 24px;
   font-family: "Inter";
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   text-align: center;
@@ -32,10 +32,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .card {
-  min-width: 540px;
   width: 540px;
   margin: 0;
 }
@@ -48,14 +49,23 @@
   line-height: 30px;
 }
 
+.card__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .card__list-item {
   font-family: "Noto-Serif";
   font-size: 16px;
   line-height: 20px;
-  list-style-type: none;
-  margin-top: 16px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
+}
+
+.card__list-item:last-child {
+  margin-bottom: 0;
 }
 
 .card__list-divider {

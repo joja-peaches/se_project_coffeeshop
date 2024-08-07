@@ -29,8 +29,11 @@
 
 .footer__list-item {
   list-style-type: none;
-  margin: 16px 0 0;
   display: flex;
+}
+
+.footer__list-item:last-child {
+  margin: 16px 0 0;
 }
 
 .footer__social-logo {

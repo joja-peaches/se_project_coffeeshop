@@ -49,12 +49,13 @@
   color: #000;
 }
 
-.nav__link:hover {
+.nav__link:visited {
   color: #000;
 }
 
-.nav__link:visited {
-  color: #000;
+.nav__link:hover {
+  color: #2f80ed;
+  transition: ease-in 0.3s;
 }
 
 .header__title {

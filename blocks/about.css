@@ -7,6 +7,7 @@
   }
   100% {
     transform: scale(1.36);
+    opacity: 0;
   }
 }
 
@@ -14,37 +15,36 @@
   background-color: #0a2850;
   overflow: hidden;
   position: relative;
-  padding: 119px 80px 173px 0;
+  padding: 100px 80px 173px 80px;
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
   margin: 0;
 }
 
 .about__title {
-  font-family: "Inter";
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   color: #fff;
-  top: 100px;
-  left: 80px;
   max-width: 251px;
-  position: absolute;
   z-index: 1;
   margin: 0;
+  text-align: left;
 }
 
 .about__content {
   max-width: 660px;
-  text-align: end;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  margin-top: 19px;
 }
 
 .about__paragraph {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 30px;
   color: #fff;
